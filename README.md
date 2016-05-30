@@ -1,11 +1,11 @@
 # Thesis-2016-KULeuven
-Darcy and non-Darcy fluid flow simulation through well-structured porous medium
+Darcy and non-Darcy fluid flow simulation through well-structured porous medium </br>
 
-Thesis submitted to obtain the degree of Master in Engineering: Chemical Engineering
-Supervisor:
-Prof. dr. ir. S. Kuhn
-Assessors:
-Prof. dr. ir. G. Stefanidis
-Ir. M. Van den Eynde
-Mentor:
+Thesis submitted to obtain the degree of Master in Engineering: Chemical Engineering </br>
+Supervisor: </br>
+Prof. dr. ir. S. Kuhn </br>
+Assessors: </br>
+Prof. dr. ir. G. Stefanidis </br>
+Ir. M. Van den Eynde </br>
+Mentor: </br>
 Ir. M. Mottaghi
