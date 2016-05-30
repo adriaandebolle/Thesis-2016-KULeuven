@@ -1,0 +1,74 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2.3.0                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    location    "system";
+    object      fvSchemes;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+ddtSchemes
+{
+    default         steadyState;
+}
+
+gradSchemes
+{
+    //default         faceLimited leastSquares 1.0;  
+    //grad(U)         faceLimited leastSquares 1.0;
+    //grad(U)         Gauss linear;
+    //default         Gauss linear; 
+    grad(U)         faceLimited Gauss linear 1.0;
+    default         faceLimited Gauss linear 1.0;
+    //default         Gauss linear
+}
+
+divSchemes
+{
+    default         none;
+    //div(phi,U)      bounded Gauss upwind;
+    //div(phi,U)      bounded Gauss linear;
+    //div(phi,U)      Gauss Gamma 0.5;
+    //div(phi,U)      bounded Gauss upwind;
+    div(phi,U)      bounded Gauss skewCorrected linearUpwind cellLimited Gauss linear 1; 
+    div(phi,k)      bounded Gauss linear upwind;
+    div(phi,epsilon) bounded Gauss linear upwind;
+    //div(phi,R)      bounded Gauss upwind;
+    //div(R)          Gauss linear;
+    div(phi,nuTilda) bounded Gauss upwind;
+    div((nuEff*dev(T(grad(U))))) Gauss linear;
+}
+
+laplacianSchemes
+{
+    //default         Gauss linear corrected;
+    default         Gauss linear limited 0.333;
+}
+
+interpolationSchemes
+{
+    default         linear;
+}
+
+snGradSchemes
+{
+    //default         corrected;
+    default         limited 0.333;
+}
+
+fluxRequired
+{
+    default         no;
+    p               ;
+}
+
+
+// ************************************************************************* //

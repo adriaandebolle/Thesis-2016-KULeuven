@@ -1,0 +1,111 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2.3.0                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    location    "system";
+    object      controlDict;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+application     simpleFoam;
+
+startFrom       latestTime;
+
+startTime       0;
+
+stopAt          endTime;
+
+endTime         5000;
+
+deltaT          1;
+
+writeControl    timeStep;
+
+writeInterval   500;
+
+purgeWrite      0;
+
+writeFormat     ascii;
+
+writePrecision  6;
+
+writeCompression off;
+
+timeFormat      general;
+
+timePrecision   6;
+
+runTimeModifiable true;
+
+functions
+{
+    fieldMinMax1
+    {
+        type        fieldMinMax;
+        functionObjectLibs ("libfieldFunctionObjects.so");
+        outputControl   timeStep;
+        writeToFile yes;
+        log         yes;
+        writeLocation yes;
+        mode        magnitude;
+        fields      (Ux);
+    }
+    inletPressurePlane
+    {
+        type            faceSource;
+        functionObjectLibs ("libfieldFunctionObjects.so");
+        enabled         true;
+        outputControl   timeStep;
+        log             true;
+        valueOutput     true;
+        source          sampledSurface;
+        sourceName      bla;
+        surfaceFormat   vtk;
+        sampledSurfaceDict
+        {
+            type            plane;    // always triangulated
+            basePoint       (0.197 0 0);
+            normalVector    (1 0 0);
+        }
+        operation       areaAverage;
+        fields
+        (
+            p
+        );
+    }
+    outletPressurePlane
+    {
+        type            faceSource;
+        functionObjectLibs ("libfieldFunctionObjects.so");
+        enabled         true;
+        outputControl   timeStep;
+        log             true;
+        valueOutput     true;
+        source          sampledSurface;
+        sourceName      bla;
+        surfaceFormat   vtk;
+        sampledSurfaceDict
+        {
+            type            plane;    // always triangulated
+            basePoint       (0.507 0 0);
+            normalVector    (1 0 0);
+        }
+        operation       areaAverage;
+        fields
+        (
+            p
+        );
+    }
+
+}
+
+
+// ************************************************************************* //
