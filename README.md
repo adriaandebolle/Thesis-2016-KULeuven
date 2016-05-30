@@ -10,4 +10,4 @@ Assessors: </br>
 <b>Prof. dr. ir. G. Stefanidis</b> </br>
 Ir. M. Van den Eynde </b> </br>
 Mentor: </br>
-<b>Ir. M. Mottaghi </b>
+<b>Ir. M. Mottaghi </b> </br>
