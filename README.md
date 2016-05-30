@@ -15,3 +15,4 @@ Ir. M. Mottaghi </br>
 This main repository contains: </br>
 - Thesis document (interactive to read with hyperlinks) </br>
 - Maps to build step by step simulation cases. Each has a README for more information.
+- The ultimate filtered sphere coordinates of a random spherical packing (and filter.py script)
