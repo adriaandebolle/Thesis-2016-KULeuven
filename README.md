@@ -5,12 +5,12 @@
 
 Thesis submitted to obtain the degree of Master in Engineering: Chemical Engineering </br>
 Supervisor: </br>
-<b>Prof. dr. ir. S. Kuhn</b> </br>
+Prof. dr. ir. S. Kuhn </br>
 Assessors: </br>
-<b>Prof. dr. ir. G. Stefanidis</b> </br>
-Ir. M. Van den Eynde </b> </br>
+Prof. dr. ir. G. Stefanidis </br>
+Ir. M. Van den Eynde </br>
 Mentor: </br>
-<b>Ir. M. Mottaghi </b> </br>
+Ir. M. Mottaghi </br>
 
 This main repository contains: </br>
 - Thesis document (interactive to read with hyperlinks) </br>
