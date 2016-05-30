@@ -1,5 +1,7 @@
 # Thesis-2016-KULeuven
-Darcy and non-Darcy fluid flow simulation through well-structured porous medium </br>
+<b>Darcy and non-Darcy fluid flow simulation through well-structured porous medium </b></br>
+
+<b>Writer: Adriaan Hugo Elise De Bolle</b>
 
 Thesis submitted to obtain the degree of Master in Engineering: Chemical Engineering </br>
 Supervisor: </br>
