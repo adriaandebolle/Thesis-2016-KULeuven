@@ -1,4 +1,4 @@
-This is the Yade folder. </br>
+This is the README of the myYade folder. </br>
 
 Step 1: alter randomPacking.py script to your needs (amount of spheres, initial volume, compression time, ...) </br>
 Step 2: $cd myYade/ </br>
