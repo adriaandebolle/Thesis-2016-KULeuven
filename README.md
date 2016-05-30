@@ -3,9 +3,9 @@ Darcy and non-Darcy fluid flow simulation through well-structured porous medium 
 
 Thesis submitted to obtain the degree of Master in Engineering: Chemical Engineering </br>
 Supervisor: </br>
-Prof. dr. ir. S. Kuhn </br>
+<b>Prof. dr. ir. S. Kuhn</b> </br>
 Assessors: </br>
-Prof. dr. ir. G. Stefanidis </br>
-Ir. M. Van den Eynde </br>
+<b>Prof. dr. ir. G. Stefanidis</b> </br>
+Ir. M. Van den Eynde </b> </br>
 Mentor: </br>
-Ir. M. Mottaghi
+<b>Ir. M. Mottaghi </b>
