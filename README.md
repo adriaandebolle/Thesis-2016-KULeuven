@@ -17,3 +17,4 @@ This main repository contains: </br>
 - Maps to build step by step simulation cases. Each has a README for more information.
 - The ultimate filtered sphere coordinates of a random spherical packing (and filter.py script)
 - Script for structured packing (SC & BCC)
+- Script to generate random packings by random positioning in Python
