@@ -15,11 +15,11 @@ FoamFile
 }
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-RASModel        laminar;
+RASModel        kEpsilon;
 
-turbulence      off;
+turbulence      on;
 
-printCoeffs     off;
+printCoeffs     on;
 
 
 // ************************************************************************* //
