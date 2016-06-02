@@ -5,5 +5,5 @@ Step 2: $cd myYade/ </br>
 Step 3: $yadedaily randomPacking.py or $yade randomPacking.py </br>
 Step 4: Run Yade </br>
 Step 5: Use centresUniform.py script to make a text file suitable for Salome </br>
-Step 6: centresRandom*amount* is created and can be used in salome script build.py or packedBedUnstr.py or ... </br>
+Step 6: centresRandom*amount* is created and can be used in python script filter.py </br>
 Step 7: Go to map Export to build geometry
