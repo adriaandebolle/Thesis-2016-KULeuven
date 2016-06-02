@@ -1,0 +1,9 @@
+set logscale y
+set title "Maximum velocity"
+set ylabel 'mag(u) '
+set xlabel 'Iteration' 
+set yrange [0.02 : 0.04]
+plot "< cat run | grep 'max(mag(U))' | cut -d' ' -f7 | tr -d ','" title 'max(mag(U))' with lines,\
+"< cat ../porousCourseSet/run | grep 'max(mag(U))' | cut -d' ' -f7 | tr -d ','" title 'max(mag(U))' with lines
+pause 1
+reread

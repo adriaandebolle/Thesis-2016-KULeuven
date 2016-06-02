@@ -1,0 +1,9 @@
+set logscale y
+set title "Plane Average Pressure"
+set ylabel 'p (Pa)'
+set xlabel 'Iteration' 
+
+plot "< cat run | grep 'areaAverage(inletPlane) of p =' | cut -d' ' -f9 | tr -d ','" title 'p' with lines,\
+"< cat ../porousCourseSet/run | grep 'areaAverage(inletPlane) of p =' | cut -d' ' -f9 | tr -d ','" title 'p' with lines
+pause 1
+reread
