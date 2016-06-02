@@ -2,6 +2,7 @@ This is the README file of Export folder. </br>
 
 The Export folder contains: </br>
 - exported .brep files that hold different geometries. </br>
+Files are too big, but can be found here: [Dropbox](https://www.dropbox.com/sh/rwy53o0apgr1hb5/AAA2CulbtENjS414E5QVfFnKa?dl=0)
 - script to automate fusing of different geometry parts (makeWhole.py) </br>
 - script to automate meshing and grouping (makeGroups.py) </br>
 
